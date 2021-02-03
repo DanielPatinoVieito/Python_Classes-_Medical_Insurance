@@ -35,7 +35,7 @@ class Patient:
     patient_information["smoker"] = self.smoker
     return patient_information
 
-# Instantiation 
+# Object Instantiation 
 patient1 = Patient("John Doe", 25, 1, 22.2, 0, 0)
 print(patient1.name)
 print(patient1.age)
@@ -44,8 +44,12 @@ print(patient1.bmi)
 print(patient1.num_of_children)
 print(patient1.smoker)
 
+# Insurance Estimation Method Test
 patient1.estimated_insurance_cost()
+
+# Update Methods Test
 patient1.update_age(26)
 patient1.update_num_children(1)
 
+# Dictionary Method Test
 print(patient1.patient_profile())
